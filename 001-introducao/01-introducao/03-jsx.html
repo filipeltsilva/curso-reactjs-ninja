@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Elementos aninhados</title>
+</head>
+<body>
+  <div class="application"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.1.0/react-dom.min.js"></script>
+  <script>
+    let nestedElements = React.createElement('div', null, [
+      React.createElement('h2', null, 'Primeiro elemento'),
+      React.createElement('h2', null, 'Segundo elemento')
+    ]);
+    ReactDOM.render(nestedElements, document.querySelector('.application'));
+  </script>
+</body>
+</html>
