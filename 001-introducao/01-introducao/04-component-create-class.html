@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JSX</title>
+  <title>Component.createClass()</title>
 </head>
 <body>
   <div class="application"></div>
@@ -13,7 +13,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.1.0/react-dom.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
   <script type="text/babel">
-    ReactDOM.render(<h1>Olá, JSX!</h1>, document.querySelector('.application'));
+    /*
+      Lembrete: não quebrar linha após a palavra return ao utilizar o padrão ES5. Alternativa: colocar o código entre parênteses.
+      Lembrete 2: retornar apenas uma tag. No caso de ser um componente estruturado, retornar a tag pai.
+    */
+    let Title = React.createClass({
+      render: () => <h1>Olá, meu primeiro componente!</h1>
+    });
+
+    ReactDOM.render(<Title />, document.querySelector('.application'));
   </script>
 </body>
 </html>
