@@ -1,7 +1,5 @@
-console.log('Webpack funcionando');
+import React from 'react';
+import {render} from 'react-dom';
+import Title from './application';
 
-let React = require('react');
-let ReactDOM = require('react-dom');
-let Title = require('./application');
-
-ReactDOM.render(React.createElement(Title), document.querySelector('[data-js="application"]'));
+render(React.createElement(Title), document.querySelector('[data-js="application"]'));
