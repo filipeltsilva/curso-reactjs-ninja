@@ -1,7 +1,7 @@
 'use strict'
-let React = require('react');
+import React from 'react';
 
-let Title = React.createClass({
+const Title = React.createClass({
   render: function() {
     return <h1>Título do Componente</h1>;
   }
