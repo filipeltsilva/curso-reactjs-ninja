@@ -1,13 +1,13 @@
 'use strict'
 
 import React from 'react'
-import HtmlAttribute from './html-attributes'
+import DefaultProps from './get-default-props'
 
 const Application = React.createClass({
   render: function () {
     return (
       <div>
-        <HtmlAttribute />
+        <DefaultProps name='Filipe' lastName='Lemos' />
       </div>
     )
   }
