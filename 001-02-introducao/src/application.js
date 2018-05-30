@@ -1,13 +1,13 @@
 'use strict'
 
 import React from 'react'
-import TitleProp from './props'
+import HtmlAttribute from './html-attributes'
 
 const Application = React.createClass({
   render: function () {
     return (
       <div>
-        <TitleProp name='Filipe' />
+        <HtmlAttribute />
       </div>
     )
   }
