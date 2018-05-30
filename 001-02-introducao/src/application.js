@@ -4,7 +4,7 @@ import React from 'react'
 import TitleProp from './props'
 
 const Application = React.createClass({
-  render: () => {
+  render: function () {
     return (
       <div>
         <TitleProp name='Filipe' />
