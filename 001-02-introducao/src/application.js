@@ -1,13 +1,13 @@
 'use strict'
 
 import React from 'react'
-import DefaultProps from './get-default-props'
+import Es6ClassComponent from './es6-class-component'
 
 const Application = React.createClass({
   render: function () {
     return (
       <div>
-        <DefaultProps name='Filipe' lastName='Lemos' age={30} />
+        <Es6ClassComponent lastName='Lemos' />
       </div>
     )
   }
