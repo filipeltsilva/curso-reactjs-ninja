@@ -10,12 +10,13 @@ const DefaultProps = React.createClass({
   getDefaultProps: function () {
     return {
       name: 'Zé',
-      lastName: 'Ninguém'
+      lastName: 'Ninguém',
+      age: 10
     }
   },
   render: function () {
     return (
-      <h1>Olá, {this.props.name} {this.props.lastName}!</h1>
+      <h1>Olá, {this.props.name} {this.props.lastName}! Você tem {this.props.age} anos de idade.</h1>
     )
   }
 })

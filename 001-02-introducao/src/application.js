@@ -7,7 +7,7 @@ const Application = React.createClass({
   render: function () {
     return (
       <div>
-        <DefaultProps name='Filipe' lastName='Lemos' />
+        <DefaultProps name='Filipe' lastName='Lemos' age={30} />
       </div>
     )
   }
