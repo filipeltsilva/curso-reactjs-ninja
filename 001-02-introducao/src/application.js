@@ -1,13 +1,13 @@
 'use strict'
 
 import React from 'react'
-import EventButton from './events'
+import ChildrenPropButton from './children-prop'
 
 const Application = React.createClass({
   render: function () {
     return (
       <div>
-        <EventButton />
+        <ChildrenPropButton><span>Texto Children dentro do Span</span></ChildrenPropButton>
       </div>
     )
   }
