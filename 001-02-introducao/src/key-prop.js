@@ -1,6 +1,9 @@
 /*
   A prop key vai permitir que o elemento a ser iterado dentro de um componente receba
   o tratamento adequado pelo React, auxiliando na performance da aplicação.
+
+  O valor da key sempre deve ser único. Caso haja valores repetidos, o React renderizizará
+  o item apenas uma vez, fazendo as junções necessárias.
 */
 
 'use strict'
