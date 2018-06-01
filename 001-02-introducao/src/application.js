@@ -1,15 +1,13 @@
 'use strict'
 
 import React from 'react'
-import KeyProp from './key-prop'
+import EventButton from './events'
 
 const Application = React.createClass({
   render: function () {
     return (
       <div>
-        {['red', 'green', 'blue'].map((square) => (
-          <KeyProp key={square} color={square} />
-        ))}
+        <EventButton />
       </div>
     )
   }

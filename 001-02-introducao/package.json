@@ -18,5 +18,10 @@
   },
   "scripts": {
     "start": "node server.js"
+  },
+  "standard": {
+    "globals": [
+      "alert"
+    ]
   }
 }
