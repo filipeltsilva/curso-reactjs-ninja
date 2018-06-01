@@ -1,13 +1,15 @@
 'use strict'
 
 import React from 'react'
-import Es6ClassComponent from './es6-class-component'
+import KeyProp from './key-prop'
 
 const Application = React.createClass({
   render: function () {
     return (
       <div>
-        <Es6ClassComponent lastName='Lemos' />
+        {['red', 'green', 'blue'].map((square) => (
+          <KeyProp key={square} color={square} />
+        ))}
       </div>
     )
   }
